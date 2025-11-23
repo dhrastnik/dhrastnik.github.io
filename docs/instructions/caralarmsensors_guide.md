@@ -2,6 +2,6 @@
 
 Pokrenuti aplikaciju:
 
-![[Screenshot_20251123_111104.jpg | 250]]
+![[../images/Screenshot_20251123_111104.jpg | 250]]
 
 
