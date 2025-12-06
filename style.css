@@ -11,7 +11,7 @@ body {
 }
 .title {
   text-align: center;
-  max-width: 1400px;
+  width: 100vh;
   padding: 2% 0px 2% 0;
   font-size: 5vh;
   font-weight: 600;
@@ -30,8 +30,8 @@ body {
 .wrapper.pre {
   /*background-size: cover !important;*/
   background-size: 100%;
-  max-width: 1400px;
-  min-width: 1200px;
+  /*max-width: 1400px;
+  min-width: 1200px; */
   background: url(https://images.unsplash.com/photo-1523633589114-88eaf4b4f1a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3870&q=80);
   background: url(https://images.unsplash.com/photo-1462556791646-c201b8241a94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2896&q=80);
   position: absolute;
