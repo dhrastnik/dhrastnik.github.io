@@ -130,7 +130,7 @@ body {
 
 .tabs input + label {
   margin: 12px -8px;
-  width: 12%;
+  width: 13%;
   transition: all 0.3s;
   text-align: center;
   border: none;
@@ -145,7 +145,7 @@ body {
   box-shadow: 1px 1px 2px 1px #231f20;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 75%;
+  font-size: 55%;
   background: #26292c;
   margin-bottom: 0.5px;
   border-radius: 7px 7px 0 0 !important;
