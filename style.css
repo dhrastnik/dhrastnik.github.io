@@ -38,7 +38,8 @@ body {
 }
 
 .wrapper .line {
-  max-width: 70%;
+  max-width: 120vh;
+  min-width: 80vh;
   margin: 2% auto 0 auto;
   height: 1px;
   background-color: #c3d2e3;
