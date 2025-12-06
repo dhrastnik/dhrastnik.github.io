@@ -197,7 +197,7 @@ img {
 .content p {
   margin: 10px 15px 10px 0;
   letter-spacing: 0.75px;
-  font-size: 15px;
+  font-size: 100%;
   font-style: normal;
   color: #f0f2fc;
   line-height: 30px;
@@ -213,8 +213,8 @@ h2.tab-title.tab-policy {
   color: #fff;
   background-position: bottom center;
   margin-bottom: 0pt !important;
-  margin-top: 6pt;
-  height: 22pt;
+  margin-top: 4pt;
+  height: 25pt;
   text-fill-color: transparent !important;
   background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
