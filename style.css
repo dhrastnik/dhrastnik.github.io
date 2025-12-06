@@ -205,14 +205,14 @@ img {
   font-family: "freight-display-pro";
   font-weight: 300 !important;
 }
-h2.tab-title.tab-warning,
-h2.tab-title.tab-success,
-h2.tab-title.tab-primary,
-h2.tab-title.tab-default {
+h2.tab-title.tab-faq,
+h2.tab-title.tab-instructions,
+h2.tab-title.tab-product,
+h2.tab-title.tab-policy {
   display: inline-flex;
   color: #fff;
   background-position: bottom center;
-  margin-bottom: 10pt !important;
+  margin-bottom: 0pt !important;
   margin-top: 6pt;
   height: 22pt;
   text-fill-color: transparent !important;
@@ -230,15 +230,15 @@ h2.tab-title.tab-default {
   font-weight: 800 !important;
 }
 
-h2.tab-title.tab-default {
+h2.tab-title.tab-policy {
   background: linear-gradient(10deg, #f7ec9c, #ff8651);
 }
 
-h2.tab-title.tab-success {
+h2.tab-title.tab-instructions {
   background: linear-gradient(10deg, #02ce85, #02ceab);
 }
 
-h2.tab-title.tab-primary {
+h2.tab-title.tab-product {
   background: linear-gradient(
     60deg,
     hsl(202deg 100% 75%),
@@ -248,7 +248,7 @@ h2.tab-title.tab-primary {
   );
 }
 
-h2.tab-title.tab-warning {
+h2.tab-title.tab-faq {
   background: linear-gradient(70deg, #c51574, #97389b);
 }
 
@@ -258,17 +258,17 @@ h2.tab-title.tab-warning {
   margin: auto !important;
   padding: 0;
 }
-label.tab.tab-primary,
-label.tab.tab-warning,
-label.tab.tab-success,
-label.tab.tab-default {
+label.tab.tab-product,
+label.tab.tab-faq,
+label.tab.tab-instructions,
+label.tab.tab-policy {
   display: inline-block;
   text-align: center;
 }
-label.tab.tab-primary {
+label.tab.tab-product {
   border-radius: 6pt 0 0 6pt;
 }
-label.tab.tab-warning {
+label.tab.tab-faq {
   border-radius: 0 6pt 6pt 0;
 }
 #tab-1:checked + label {
