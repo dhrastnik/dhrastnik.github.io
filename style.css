@@ -111,7 +111,7 @@ img {
 }
 
 .content {
-  height: 90%;
+  height: 85%;
   margin: 0px auto;
   text-align: left;
   line-height: 20px;
@@ -206,8 +206,9 @@ img {
   letter-spacing: 0.75px;
   width: 100%;
   height: 90%;
-  font-size: 90%;
+  font-size: 80%;
   font-style: normal;
+  text-align: justify;
   color: #f0f2fc;
   line-height: 30px;
   margin-top: 10pt;
@@ -225,7 +226,7 @@ h2.tab-title.tab-policy {
   background-position: bottom center;
   margin-bottom: 0pt !important;
   margin-top: 4pt;
-  height: 25pt;
+  height: 35pt;
   text-fill-color: transparent !important;
   background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
@@ -341,26 +342,27 @@ label.tab.tab-faq {
 
 
 /* Mobile styles */
-@media (max-width: 480px) {
-  .img {width: 8%; height: 8%;}
-  /*.content {height: 640px;}*/
+
+@media (max-width: 340px) {
+  .img {width: 16%; height: 16%;}
+}
+
+@media (min-width: 341px) and (max-width: 480px) {
+  .img {width: 12%; height: 12%;}
 }
 
 /* Tablet styles */
 @media (min-width: 481px) and (max-width: 768px) {
   .img {width: 6%; height: 6%;}
-  /*.content {height: 640px;}*/
 }
 
 /* Desktop styles */
 @media (min-width: 769px) {
   .img {width: 4%; height: 4%;}
-  /*.content {height: 640px;}*/
 }
 
 /* High-resolution display styles */
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
   .img {width: 4%; height: 4%;}
-  /*.content {height: 640px;}*/
 }
