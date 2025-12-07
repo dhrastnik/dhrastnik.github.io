@@ -13,7 +13,8 @@ body {
   height: 100%;
   font-family: "Roboto", sans-serif;
   /*background: linear-gradient(#141e30, #243b55);*/
-  background: linear-gradient(#22354F, #779ECB);
+  /*background: linear-gradient(#22354F, #779ECB);*/
+  background: linear-gradient(#254725, #83FC83);
 }
 .title {
   text-align: center;
@@ -27,7 +28,8 @@ body {
   font-family: "Playfair Display SC";
 }
 .wrapper {
-  background-color: #f6f8ff;
+  /*background-color: #f6f8ff;*/
+  background-color: #83FC83;
   min-height: 100%;
   min-width: 90%;
   background: transparent;
@@ -36,7 +38,8 @@ body {
 
 .wrapper.pre {
   background-size: cover !important;
-  linear-gradient(90deg, #ff6961, #77dd77, #779ecb);
+  /*linear-gradient(90deg, #ff6961, #77dd77, #779ecb);*/
+  background-color: #83FC83;
   
   /* background: url(https://images.unsplash.com/photo-1523633589114-88eaf4b4f1a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3870&q=80);
   background: url(https://images.unsplash.com/photo-1462556791646-c201b8241a94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2896&q=80);
@@ -171,7 +174,7 @@ img {
   text-align: left;
   line-height: 20px;
   height: 640px;
-  border-radius: 5px;
+  border-radius: 25px;
   box-shadow: 0 2px 3px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
   display: block;
   padding: 1.25rem;
