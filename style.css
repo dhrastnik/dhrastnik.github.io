@@ -73,12 +73,13 @@ body {
   margin: 0 auto;
 }
 
+
 img {
+  width: 2%; height: 2%;
   display: inline-block
   margin: auto;
-  width: 7%;
-  height: 7%; 
 }
+
 
 .tabs {
   text-align: center;
@@ -207,7 +208,7 @@ img {
 }
 h2.tab-title.tab-faq,
 h2.tab-title.tab-instructions,
-h2.tab-title.tab-product,
+h2.tab-title.tab-home,
 h2.tab-title.tab-policy {
   display: inline-flex;
   color: #fff;
@@ -238,7 +239,7 @@ h2.tab-title.tab-instructions {
   background: linear-gradient(10deg, #02ce85, #02ceab);
 }
 
-h2.tab-title.tab-product {
+h2.tab-title.tab-home {
   background: linear-gradient(
     60deg,
     hsl(202deg 100% 75%),
@@ -258,14 +259,14 @@ h2.tab-title.tab-faq {
   margin: auto !important;
   padding: 0;
 }
-label.tab.tab-product,
+label.tab.tab-home,
 label.tab.tab-faq,
 label.tab.tab-instructions,
 label.tab.tab-policy {
   display: inline-block;
   text-align: center;
 }
-label.tab.tab-product {
+label.tab.tab-home {
   border-radius: 6pt 0 0 6pt;
 }
 label.tab.tab-faq {
@@ -325,15 +326,24 @@ label.tab.tab-faq {
   z-index: 2;
 }
 
-span.numit {
-  font-size: 12pt;
-  font-family: "muli";
-  font-weight: 600;
-  text-shadow: 0.5px 0.5px 0.5px #e7e9f5;
-  color: #0e101a;
-  margin-right: 2px;
-  margin-left: -2px;
-  padding: 0;
-  color: aliceblue;
-  text-shadow: 0.5pt 0.5pt 0.5pt #2d3748;
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  .img {width: 7%; height: 7%;}
+}
+
+/* Tablet styles */
+@media (min-width: 481px) and (max-width: 768px) {
+  .img {width: 6%; height: 6%;}
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .img {width: 4%; height: 4%;}
+}
+
+/* High-resolution display styles */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .img {width: 2%; height: 2%;}
 }
