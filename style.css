@@ -113,7 +113,7 @@ img {
 
 .content {
   height: 75%;
-  margin: 0px auto;
+  margin: 5pt auto;
   text-align: left;
   line-height: 20px;
   border-radius: 25px;
@@ -211,7 +211,7 @@ img {
   font-style: normal;
   text-align: justify;
   color: #f0f2fc;
-  line-height: 30px;
+  line-height: 20px;
   margin-top: 10pt;
   overflow-y: auto;
   font-family: "freight-display-pro";
