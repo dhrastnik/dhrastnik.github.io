@@ -78,11 +78,22 @@ body {
 }
 
 
-img {
+.logo {
   width: 2%; height: 2%;
   display: inline-block
   margin: auto;
 }
+
+.screenshot {
+  width: 30%; height: auto;
+  display: inline-block
+  margin: auto;	
+}
+
+.url-link, .my-headers {
+  color: #51a14c;
+}
+
 
 
 .tabs {
@@ -346,25 +357,25 @@ label.tab.tab-faq {
 /* Mobile styles */
 
 @media (max-width: 340px) {
-  .img {width: 16%; height: 16%;}
+  .logo {width: 16%; height: 16%;}
 }
 
 @media (min-width: 341px) and (max-width: 480px) {
-  .img {width: 12%; height: 12%;}
+  .logo {width: 12%; height: 12%;}
 }
 
 /* Tablet styles */
 @media (min-width: 481px) and (max-width: 768px) {
-  .img {width: 6%; height: 6%;}
+  .logo {width: 6%; height: 6%;}
 }
 
 /* Desktop styles */
 @media (min-width: 769px) {
-  .img {width: 4%; height: 4%;}
+  .logo {width: 4%; height: 4%;}
 }
 
 /* High-resolution display styles */
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
-  .img {width: 4%; height: 4%;}
+  .logo {width: 4%; height: 4%;}
 }
