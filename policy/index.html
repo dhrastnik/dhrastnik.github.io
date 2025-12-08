@@ -41,6 +41,7 @@
         }
         section {
             margin-bottom: 20px;
+			font-size: 1em;
         }
         footer {
             text-align: center;
@@ -54,6 +55,22 @@
         }
         a:hover {
             text-decoration: underline;
+        }
+		
+        /* Mobile styles */
+
+        @media (max-width: 340px) {
+          section {font-size: 0.7em;}
+		  header h1 {font-size: 1.4em;}
+		  header p {font-size: 0.8em;}
+		  footer {font-size: 0.6em;}
+        }
+
+        @media (min-width: 341px) and (max-width: 480px) {
+          section {font-size: 0.9em;}
+		  header h1 {font-size: 1.8em;}
+		  header p {font-size: 1em;}
+		  footer {font-size: 0.8em;}
         }
     </style>
 </head>
