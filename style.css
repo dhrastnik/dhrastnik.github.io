@@ -85,7 +85,7 @@ body {
 }
 
 .screenshot {
-  width: 30%; height: auto;
+  width: 40%; height: auto;
   display: inline-block
   margin: auto;	
 }
@@ -123,8 +123,9 @@ body {
 }
 
 .content {
-  height: 75%;
   margin: 5pt auto;
+  min-height: 70%;
+  /*height: 75%;*/
   text-align: left;
   line-height: 20px;
   border-radius: 25px;
@@ -358,15 +359,20 @@ label.tab.tab-faq {
 
 @media (max-width: 340px) {
   .logo {width: 16%; height: 16%;}
+  .screenshot {width: 60%; height: auto;}
+  .content p {font-size: 60%;}
 }
 
 @media (min-width: 341px) and (max-width: 480px) {
   .logo {width: 12%; height: 12%;}
+  .screenshot {width: 60%; height: auto;}
+  .content p {font-size: 60%;}
 }
 
 /* Tablet styles */
 @media (min-width: 481px) and (max-width: 768px) {
   .logo {width: 6%; height: 6%;}
+  .screenshot {width: 50%; height: auto;}
 }
 
 /* Desktop styles */
