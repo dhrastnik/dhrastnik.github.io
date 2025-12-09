@@ -15,8 +15,9 @@ body {
   height: 100%;
   font-family: "Roboto", sans-serif;
   /*background: linear-gradient(#141e30, #243b55);*/
-  /*background-repeat: no-repeat;*/
-  background: linear-gradient(#22354F, #779ECB);
+  /*background-repeat: no-repeat;
+  background: linear-gradient(#22354F, #779ECB); */
+  background: linear-gradient(#002A85,#75A0FF);
 }
 .title {
   text-align: center;
@@ -28,6 +29,16 @@ body {
   opacity: 0.9;
   font-family: "Playfair Display SC";
 }
+
+.FAQheader {
+ color:#c51574;
+ font-size: 2vh; 
+}
+
+.footer {
+  font-size: 0.8vh;
+}
+
 .wrapper {
   /*background-color: #f6f8ff;
   background-color: #83FC83;*/
@@ -39,8 +50,8 @@ body {
 
 .wrapper.pre {
   background-size: cover !important;
-  /*linear-gradient(90deg, #ff6961, #77dd77, #779ecb);*/
-  background: linear-gradient(#22354F, #779ECB);
+  /*linear-gradient(90deg, #ff6961, #77dd77, #779ecb);
+  background: linear-gradient(#22354F, #779ECB);*/
   /*background-repeat: no-repeat;*/
   position: absolute;
   top: 0;
@@ -85,9 +96,10 @@ body {
 }
 
 .screenshot {
+  float: left;
   width: 40%; height: auto;
-  display: inline-block
-  margin: auto;	
+  /*display: inline-block*/
+  margin: 0 10px 0 20px;	
 }
 
 .url-link, .my-headers {
