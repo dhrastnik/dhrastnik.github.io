@@ -4,11 +4,11 @@ html {
 	width: 100vw;
 }
 
-
+/*
 * {
 	 outline: 1px solid red;
   }
-
+*/
 
   
 body {
@@ -18,8 +18,9 @@ body {
   font-family: "Roboto", sans-serif;
   /*background-repeat: no-repeat;*/
   /*background: linear-gradient(#22354F, #779ECB);*/
-  /*background: linear-gradient(#7BBA7B, #BDFFBD);*/
-  background: linear-gradient(#9AB89A, #DDEDDD);
+  /*background: linear-gradient(#7BBA7B, #BDFFBD); plava*/
+  /* background: linear-gradient(#9AB89A, #DDEDDD); zelena */
+  background-color: #DDEDDD;
   
 }
 .title {
@@ -55,7 +56,6 @@ body {
 
 .wrapper .line {
   max-width: 100vw;
-  min-width: 100vw;
   margin: 2% auto 0 auto;
   height: 1px;
   background-color: #c3d2e3;
@@ -84,7 +84,7 @@ body {
 
 .content {
   height: 55vh;
-  margin: 0px auto;
+  margin: 5px auto;
   text-align: left;
   line-height: 20px;
   border-radius: 25px;
@@ -127,7 +127,6 @@ body {
 .logo {
   width: 2vw; height: auto;
   display: inline-block;
-  padding: 1vh;
   margin: auto;
 }
 
@@ -139,19 +138,20 @@ body {
 }
 
 .my-headers {
-  font-size: 3vh;
+  font-size: 2.4vh;
   color: #51a14c;
+  color: #1574C5;
+}
+
+.FAQheader {
+ color:#c51574;
+ font-size: 2vh; 
 }
 
 .url-link {
   color: #51a14c;
   font-size: 1.5vh;  
 }	
-
-.FAQheader {
- color:#c51574;
- font-size: 2vh; 
-}
 
 .footer {
   color: white;
@@ -178,7 +178,7 @@ body {
   color: #777;
 }
 .tabs .tabsShadow {
-  width: 100vw;
+  width: 80vw;
   padding: 10px;
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.04);
   box-sizing: border-box;
@@ -367,24 +367,40 @@ label.tab.tab-faq {
 /* Mobile styles */
 
 @media (max-width: 340px) {
-  .logo {width: 16%; height: 16%;}
+  .logo {width: 2vh; height: 2vh;}
+  .title {font-size: 2.5vh;}
   .screenshot {width: 60%; height: auto;}
-  .content .paragraf {font-size: 60%;}
-  html {height: 130vh};
+  .content .paragraf {font-size: 80%;}
+  h2.tab-title.tab-faq,
+  h2.tab-title.tab-instructions,
+  h2.tab-title.tab-home,
+  h2.tab-title.tab-policy {height: 28pt; font-size: 15px;}
+  .my-headers {1.0vh;}
+  .FAQheader {font-size: 1.2vh;}     
 }
 
 @media (min-width: 341px) and (max-width: 480px) {
-  .logo {width: 12%; height: 12%;}
+  .logo {width: 3vh; height: 3vh;}
+  .title {font-size: 3.5vh;}
   .screenshot {width: 60%; height: auto;}
-  .content .paragraf {font-size: 60%;}
-   html {height: 130vh};
+  .content .paragraf {font-size: 80%;}
+  h2.tab-title.tab-faq,
+  h2.tab-title.tab-instructions,
+  h2.tab-title.tab-home,
+  h2.tab-title.tab-policy {height: 30pt; font-size: 16px;}
+  .my-headers {2.0vh;}
+  .FAQheader {font-size: 1.6vh;}  
 }
 
 /* Tablet styles */
 @media (min-width: 481px) and (max-width: 768px) {
-  .logo {width: 6%; height: 6%;}
+  .logo {width: 4vh; height: 4vh;}
+  .title {font-size: 4vh;}
   .screenshot {width: 50%; height: auto;}
-  html {height: 130vh};
+  h2.tab-title.tab-faq,
+  h2.tab-title.tab-instructions,
+  h2.tab-title.tab-home,
+  h2.tab-title.tab-policy {height: 32pt; font-size: 18px;}
 }
 
 /* Desktop styles */
