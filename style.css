@@ -1,6 +1,7 @@
 /* Basic */
 html {
-	height: 150%;
+	height: 100vh;
+	width: 100vw;
 }
 
 /*
@@ -8,20 +9,22 @@ html {
 	 outline: 1px solid red;
   }
 */
+
   
 body {
   padding: 0;
   margin: 0;
-  height: 100%;
+  height: 90vh;
   font-family: "Roboto", sans-serif;
-  /*background: linear-gradient(#141e30, #243b55);*/
-  /*background-repeat: no-repeat;
-  background: linear-gradient(#22354F, #779ECB); */
-  background: linear-gradient(#002A85,#75A0FF);
+  /*background-repeat: no-repeat;*/
+  /*background: linear-gradient(#22354F, #779ECB);*/
+  /*background: linear-gradient(#7BBA7B, #BDFFBD);*/
+  background: linear-gradient(#9AB89A, #DDEDDD);
+  
 }
 .title {
   text-align: center;
-  width: 100%;
+  width: 90vw;
   padding: 2% 0px 2% 0;
   font-size: 5vh;
   font-weight: 400;
@@ -29,29 +32,19 @@ body {
   opacity: 0.9;
   font-family: "Playfair Display SC";
 }
-
-.FAQheader {
- color:#c51574;
- font-size: 2vh; 
-}
-
-.footer {
-  font-size: 0.8vh;
-}
-
 .wrapper {
   /*background-color: #f6f8ff;
   background-color: #83FC83;*/
-  height: 100%;
-  min-width: 90%;
+  height: 80vh;
+  min-width: 90vw;
   background: transparent;
   opacity: 1;
 }
 
 .wrapper.pre {
   background-size: cover !important;
-  /*linear-gradient(90deg, #ff6961, #77dd77, #779ecb);
-  background: linear-gradient(#22354F, #779ECB);*/
+  /*linear-gradient(90deg, #ff6961, #77dd77, #779ecb);*/
+  /*background: linear-gradient(#22354F, #779ECB);*/
   /*background-repeat: no-repeat;*/
   position: absolute;
   top: 0;
@@ -61,33 +54,74 @@ body {
 }
 
 .wrapper .line {
-  max-width: 100%;
-  min-width: 80%;
+  max-width: 100vw;
+  min-width: 100vw;
   margin: 2% auto 0 auto;
   height: 1px;
   background-color: #c3d2e3;
 }
 
 .container {
-  height: 75%;
-  min-width: 80%;
+  height: 70vh;
+  min-width: 60vh;
   padding: 10px 0;
   text-align: center;
 }
+
 .container .card {
- /* max-width: 600px;
-  min-height: 140px;
-  min-width: 595px; */
-  max-width: 90%;
-  min-height: 60%;
-  height: 112%;
-  /*  bilo 100% */
-  /*background-color: white;*/
+  max-width: 80vw;
+  height: 70vh;
   border-radius: 10px;
-  border: 1px solid #e3e3e3;
+  border: none;
   margin: 0 auto;
+  z-index: 4 !important;
+  position: relative;
+  background: linear-gradient(#141e30, #243b55);
+  background: #16181a;
+  border-top: 1px solid #3b3d3f;
+  background: hsl(232deg 18% 8%);
 }
 
+.content {
+  height: 55vh;
+  margin: 0px auto;
+  text-align: left;
+  line-height: 20px;
+  border-radius: 25px;
+  box-shadow: 0 2px 3px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
+  display: block;
+  padding: 1.25rem;
+  z-index: 2;
+  border-top: 1px solid #3b3d3f;
+  background: hsl(232deg 16% 15%);
+  position: relative;
+}
+
+.content .item {
+  height: 55vh;
+  width: 74vw;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  position: absolute;
+  padding: 10px 20px;
+}
+
+.content .paragraf {
+  margin: 10px 15px 10px 0;
+  letter-spacing: 0.75px;
+  width: 70vw;
+  height: 45vh;
+  font-size: 1.8vh;
+  font-style: normal;
+  text-align: justify;
+  color: #f0f2fc;
+  line-height: 30px;
+  margin-top: 10pt;
+  overflow-y: auto;
+  font-family: "freight-display-pro";
+  font-weight: 300 !important;
+}
 
 .logo {
   width: 2%; height: 2%;
@@ -97,16 +131,35 @@ body {
 
 .screenshot {
   float: left;
-  width: 40%; height: auto;
-  /*display: inline-block*/
-  margin: 0 10px 0 20px;	
+  width: 25vw; height: auto;
+  /*display: inline-block */
+  margin: 0 15px 0 0px;	
 }
 
-.url-link, .my-headers {
+.my-headers {
+  font-size: 3vh;
   color: #51a14c;
 }
 
+.url-link {
+  color: #51a14c;
+  font-size: 1.5vh;  
+}	
 
+.FAQheader {
+ color:#c51574;
+ font-size: 2vh; 
+}
+
+.footer {
+  color: white;
+  font-size: 1.4vh;
+  height: 4vh;
+}
+
+.footer .url-link{
+ font-size: 1.4vh;	
+}
 
 .tabs {
   text-align: center;
@@ -134,31 +187,7 @@ body {
   pointer-events: none;
 }
 
-.content {
-  margin: 5pt auto;
-  min-height: 70%;
-  /*height: 75%;*/
-  text-align: left;
-  line-height: 20px;
-  border-radius: 25px;
-  box-shadow: 0 2px 3px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
-  display: block;
-  /*padding: 1.25rem;*/
-  z-index: 2;
-  border-top: 1px solid #3b3d3f;
-  background: hsl(232deg 16% 15%);
-  position: relative;
-}
 
-.content .item {
-  height: 90%;
-  width: 87%;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s;
-  position: absolute;
-  padding: 10px 20px;
-}
 
 #tab-1:checked ~ .glider {
   left: 0px;
@@ -200,7 +229,7 @@ body {
   box-shadow: 1px 1px 2px 1px #231f20;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 8pt;
+  font-size: 1.6vh;
   background: #26292c;
   margin-bottom: 0.5px;
   border-radius: 7px 7px 0 0 !important;
@@ -209,37 +238,6 @@ body {
   font-family: "antique-olive" !important;
   background: hsl(232deg 6% 17%);
   cursor: pointer;
-}
-
-
-.container .card {
-  max-width: 90%;
-  min-height: 50%;
-  border-radius: 10px;
-  border: none;
-  margin: 0 auto;
-  z-index: 4 !important;
-  position: relative;
-  background: linear-gradient(#141e30, #243b55);
-  background: #16181a;
-  border-top: 1px solid #3b3d3f;
-  background: hsl(232deg 18% 8%);
-}
-
-.content p {
-  margin: 10px 15px 10px 0;
-  letter-spacing: 0.75px;
-  width: 100%;
-  height: 90%;
-  font-size: 80%;
-  font-style: normal;
-  text-align: justify;
-  color: #f0f2fc;
-  line-height: 20px;
-  margin-top: 10pt;
-  overflow-y: auto;
-  font-family: "freight-display-pro";
-  font-weight: 300 !important;
 }
 
 h2.tab-title.tab-faq,
@@ -251,8 +249,7 @@ h2.tab-title.tab-policy {
   background-position: bottom center;
   margin-bottom: 0pt !important;
   margin-top: 4pt;
-  margin-left: 2pt;
-  height: 25pt;
+  height: 35pt;
   text-fill-color: transparent !important;
   background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
@@ -262,7 +259,7 @@ h2.tab-title.tab-policy {
   -ms-background-clip: text;
   -ms-text-fill-color: transparent;
   text-transform: capitalize;
-  font-size: 15px;
+  font-size: 20px;
   letter-spacing: 0px;
   font-family: "Manrope" !important;
   font-weight: 800 !important;
@@ -372,19 +369,22 @@ label.tab.tab-faq {
 @media (max-width: 340px) {
   .logo {width: 16%; height: 16%;}
   .screenshot {width: 60%; height: auto;}
-  .content p {font-size: 60%;}
+  .content .paragraf {font-size: 60%;}
+  html {height: 130vh};
 }
 
 @media (min-width: 341px) and (max-width: 480px) {
   .logo {width: 12%; height: 12%;}
   .screenshot {width: 60%; height: auto;}
-  .content p {font-size: 60%;}
+  .content .paragraf {font-size: 60%;}
+   html {height: 130vh};
 }
 
 /* Tablet styles */
 @media (min-width: 481px) and (max-width: 768px) {
   .logo {width: 6%; height: 6%;}
   .screenshot {width: 50%; height: auto;}
+  html {height: 130vh};
 }
 
 /* Desktop styles */
