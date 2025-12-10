@@ -1,14 +1,14 @@
 /* Basic */
 html {
-	height: 100vh;
+	height: auto;
 	width: 100vw;
 }
 
-/*
+
 * {
 	 outline: 1px solid red;
   }
-*/
+
 
   
 body {
@@ -24,7 +24,7 @@ body {
 }
 .title {
   text-align: center;
-  width: 90vw;
+  width: auto;
   padding: 2% 0px 2% 0;
   font-size: 5vh;
   font-weight: 400;
@@ -63,14 +63,14 @@ body {
 
 .container {
   height: 70vh;
-  min-width: 60vh;
+  min-width: 40vw;
   padding: 10px 0;
   text-align: center;
 }
 
 .container .card {
   max-width: 80vw;
-  height: 70vh;
+  height: auto;
   border-radius: 10px;
   border: none;
   margin: 0 auto;
@@ -99,7 +99,8 @@ body {
 
 .content .item {
   height: 55vh;
-  width: 74vw;
+  /*width: 74vw;*/
+  width: auto;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
@@ -124,8 +125,9 @@ body {
 }
 
 .logo {
-  width: 2%; height: 2%;
-  display: inline-block
+  width: 2vw; height: auto;
+  display: inline-block;
+  padding: 1vh;
   margin: auto;
 }
 
@@ -176,7 +178,7 @@ body {
   color: #777;
 }
 .tabs .tabsShadow {
-  width: 100%;
+  width: 100vw;
   padding: 10px;
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.04);
   box-sizing: border-box;
@@ -214,7 +216,7 @@ body {
 
 .tabs input + label {
   margin: 8px -8px;
-  width: 18%;
+  width: 18vw;
   transition: all 0.3s;
   text-align: center;
   border: none;
@@ -346,7 +348,7 @@ label.tab.tab-faq {
 }
 
 .glider {
-  width: 15%;
+  width: 15vw;
   padding: 0px 13px;
   height: 4.5px;
   border-radius: 0 0 1px 1px;
@@ -361,8 +363,6 @@ label.tab.tab-faq {
   top: 36px;
   z-index: 2;
 }
-
-
 
 /* Mobile styles */
 
@@ -397,3 +397,6 @@ label.tab.tab-faq {
 (min-resolution: 192dpi) {
   .logo {width: 4%; height: 4%;}
 }
+
+
+
