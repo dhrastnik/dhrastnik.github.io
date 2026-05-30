@@ -150,6 +150,11 @@ body {
  font-size: 2vh; 
 }
 
+.INSTRheader {
+ color:#02ceab;
+ font-size: 1.5vh; 
+}
+
 .url-link {
   color: #51a14c;
   font-size: 1.5vh;  

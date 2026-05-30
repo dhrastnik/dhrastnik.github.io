@@ -55,8 +55,22 @@
         </div>
         <div class="item" id="content-2">
           <h2 class="tab-title tab-instructions">Instruction Guides</h2>
-          <p class="paragraf">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </p>
+		  <div id="instructions">
+            <p class="paragraf">
+			   <a href="#" onclick="loadInstructions('instructions/guide1.html'); return false;">
+                 <span class="INSTRheader"> Uputa za instalaciju mobilnog telefona u automobil<br><br></span>
+			   </a>
+			   <a href="#" onclick="loadInstructions('instructions/guide2.html'); return false;">
+			   <span class="INSTRheader"> Uputa za instalaciju CarAlarmSensor aplikacije<br><br></span>
+			   </a>
+			   <a href="#" onclick="loadInstructions('instructions/guide3.html'); return false;">
+			   <span class="INSTRheader"> Uputa za instalaciju CarAlarm aplikacije<br><br></span>
+			   </a>
+			   <a href="#" onclick="loadInstructions('instructions/guide4.html'); return false;">
+			   <span class="INSTRheader"> Uputa za rad sa alarmnim sustavom<br><br></span>
+			   </a>
+			</p>
+		  </div>	
         </div>
         <div class="item" id="content-3">
           <h2 class="tab-title tab-policy">Policy</h2>
@@ -92,6 +106,30 @@
     </div>
   </div>
 </div>
+
+<script>
+let originalContent;
+
+async function loadInstructions(file) {
+
+    if (!originalContent) {
+        originalContent =
+            document.getElementById('instructions').innerHTML;
+    }
+
+    const response = await fetch(file);
+    const html = await response.text();
+
+    document.getElementById('instructions').innerHTML =
+        html +
+        '<p><a href="#" onclick="goBack(); return false;">Back</a></p>';
+}
+
+function goBack() {
+    document.getElementById('instructions').innerHTML =
+        originalContent;
+}
+</script>
     
   </body>
   
