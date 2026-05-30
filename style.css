@@ -124,6 +124,9 @@ body {
   overflow-y: auto;
   font-family: "freight-display-pro";
   font-weight: 300 !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 .logo {
