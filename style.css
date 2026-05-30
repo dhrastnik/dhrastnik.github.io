@@ -150,6 +150,11 @@ body {
  font-size: 2vh; 
 }
 
+.instruction-link {
+    color: #02ceab;
+    text-decoration: none;
+}
+
 .INSTRheader {
  color:#02ceab;
  font-size: 1.5vh; 
