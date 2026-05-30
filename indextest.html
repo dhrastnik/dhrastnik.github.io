@@ -129,8 +129,10 @@ async function loadInstructions(file) {
     const html = await response.text();
 
     document.getElementById('instructions').innerHTML =
+	    '<div class="paragraf">' +
         html +
-        '<p><a href="#" onclick="goBack(); return false;">Back</a></p>';
+        '<p><a href="#" onclick="goBack(); return false;">Back</a></p>' +
+		'</div>';
 }
 
 function goBack() {
