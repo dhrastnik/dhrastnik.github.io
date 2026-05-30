@@ -69,7 +69,7 @@ body {
 }
 
 .container .card {
-  max-width: 80vw;
+  max-width: 90vw;
   height: auto;
   border-radius: 10px;
   border: none;
@@ -109,9 +109,11 @@ body {
 }
 
 .content .paragraf {
-  margin: 10px 15px 10px 0;
+  margin: 10px 15px 10px 10px;
+  padding-right: 20px;
+  scrollbar-gutter: stable; /* Keeps space for scrollbar */
   letter-spacing: 0.75px;
-  width: 70vw;
+  width: 80vw;
   height: 45vh;
   font-size: 1.8vh;
   font-style: normal;
@@ -144,7 +146,7 @@ body {
 }
 
 .FAQheader {
- color:#c51574;
+ color:#FC8CB9;
  font-size: 2vh; 
 }
 
@@ -228,7 +230,8 @@ body {
   vertical-align: top;
   justify-content: flex-start;
   background: #333;
-  box-shadow: 1px 1px 2px 1px #231f20;
+  /*box-shadow: 1px 1px 2px 1px #231f20;*/
+  box-shadow: 1px 1px 2px 1px #631f20;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1.6vh;
@@ -384,6 +387,7 @@ label.tab.tab-faq {
   .title {font-size: 3.5vh;}
   .screenshot {width: 60%; height: auto;}
   .content .paragraf {font-size: 80%;}
+  .content .paragraf {width: 85%;}
   h2.tab-title.tab-faq,
   h2.tab-title.tab-instructions,
   h2.tab-title.tab-home,
