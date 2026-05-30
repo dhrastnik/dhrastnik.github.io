@@ -146,13 +146,17 @@ body {
 }
 
 .FAQheader {
- color:#FC8CB9;
- font-size: 2vh; 
+  color:#FC8CB9;
+  font-size: 2vh; 
 }
 
 .instruction-link {
-    color: #02ceab;
-    text-decoration: none;
+  color: #02ceab;
+  text-decoration: none;
+}
+
+.title-hover:hover {
+  text-decoration-line: underline;
 }
 
 .url-link {
@@ -202,7 +206,7 @@ body {
   left: 0px;
 }
 #tab-2:checked + label {
-  color: #51a14c;
+  color: #06fdd2;
 }
 #tab-2:checked ~ .glider {
   background: linear-gradient(90deg, #51a14c 0%, #10c33e 100%);
