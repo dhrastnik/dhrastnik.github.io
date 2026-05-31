@@ -92,6 +92,18 @@
             Politika sigurnosti i zaštite privatnih podataka nalazi se na stranici:<br>
 			<strong><a class="url-link" href="https://cargpsalarm.com/policy">https://cargpsalarm.com/policy</a>
 		  </p>
+		  
+		  <div id="debug"
+     style="position:fixed;
+            bottom:5px;
+            left:5px;
+            background:black;
+            color:white;
+            padding:5px;
+            z-index:9999;
+            font-size:12px;">
+         </div>
+		  
         </div>
         <div class="item" id="content-4">
           <h2 class="tab-title tab-faq">FAQ</h2> <br>
@@ -115,6 +127,14 @@
   </div>
 </div>
 
+<script>
+window.addEventListener('load', function() {
+    document.getElementById('debug').innerHTML =
+        'viewport: ' + window.innerWidth + ' × ' + window.innerHeight +
+        '<br>screen: ' + screen.width + ' × ' + screen.height +
+        '<br>dpr: ' + window.devicePixelRatio;
+});
+</script>
 <script>
 let originalContent;
 

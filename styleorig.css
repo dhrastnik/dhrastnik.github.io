@@ -1,0 +1,434 @@
+/* Basic */
+html {
+	height: auto;
+	width: 100vw;
+}
+
+/*
+* {
+	 outline: 1px solid red;
+  }
+*/
+
+  
+body {
+  padding: 0;
+  margin: 0;
+  height: 90vh;
+  font-family: "Roboto", sans-serif;
+  /*background-repeat: no-repeat;*/
+  /*background: linear-gradient(#22354F, #779ECB);*/
+  /*background: linear-gradient(#7BBA7B, #BDFFBD); plava*/
+  /* background: linear-gradient(#9AB89A, #DDEDDD); zelena */
+  background-color: #DDEDDD;
+  
+}
+.title {
+  text-align: center;
+  width: auto;
+  padding: 2% 0px 2% 0;
+  font-size: 5vh;
+  font-weight: 400;
+  color: #1E2120;
+  opacity: 0.9;
+  font-family: "Playfair Display SC";
+}
+.wrapper {
+  /*background-color: #f6f8ff;
+  background-color: #83FC83;*/
+  height: 80vh;
+  min-width: 90vw;
+  background: transparent;
+  opacity: 1;
+}
+
+.wrapper.pre {
+  background-size: cover !important;
+  /*linear-gradient(90deg, #ff6961, #77dd77, #779ecb);*/
+  /*background: linear-gradient(#22354F, #779ECB);*/
+  /*background-repeat: no-repeat;*/
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  opacity: 0.15;
+  /* background: url(https://assets.codepen.io/4927073/mybg.jpg);*/
+}
+
+.wrapper .line {
+  max-width: 100vw;
+  margin: 2% auto 0 auto;
+  height: 1px;
+  background-color: #c3d2e3;
+}
+
+.container {
+  height: 70vh;
+  min-width: 40vw;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.container .card {
+  max-width: 90vw;
+  height: auto;
+  border-radius: 10px;
+  border: none;
+  margin: 0 auto;
+  z-index: 4 !important;
+  position: relative;
+  background: linear-gradient(#141e30, #243b55);
+  background: #16181a;
+  border-top: 1px solid #3b3d3f;
+  background: hsl(232deg 18% 8%);
+}
+
+.content {
+  height: 55vh;
+  margin: 5px auto;
+  text-align: left;
+  line-height: 20px;
+  border-radius: 25px;
+  box-shadow: 0 2px 3px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
+  display: block;
+  padding: 1.25rem;
+  z-index: 2;
+  border-top: 1px solid #3b3d3f;
+  background: hsl(232deg 16% 15%);
+  position: relative;
+}
+
+.content .item {
+  height: 55vh;
+  /*width: 74vw;*/
+  width: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  position: absolute;
+  padding: 10px 20px;
+}
+
+.content .paragraf {
+  margin: 10px 15px 10px 10px;
+  padding-right: 20px;
+  scrollbar-gutter: stable; /* Keeps space for scrollbar */
+  letter-spacing: 0.75px;
+  width: 80vw;
+  height: 45vh;
+  font-size: 1.8vh;
+  font-style: normal;
+  text-align: justify;
+  color: #f0f2fc;
+  line-height: 30px;
+  margin-top: 10pt;
+  overflow-y: auto;
+  font-family: "freight-display-pro";
+  font-weight: 300 !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.logo {
+  width: 2vw; height: auto;
+  display: inline-block;
+  margin: auto;
+}
+
+.screenshot {
+  float: left;
+  width: 25vw; height: auto;
+  /*display: inline-block */
+  margin: 0 15px 0 0px;	
+}
+
+.my-headers {
+  font-size: 2.4vh;
+  color: #51a14c;
+  color: #1574C5;
+}
+
+.FAQheader {
+  color:#FC8CB9;
+  font-size: 2vh; 
+}
+
+.instruction-link {
+  color: #02ceab;
+  text-decoration: none;
+}
+
+.title-hover:hover {
+  text-decoration-line: underline;
+}
+
+.url-link {
+  color: #51a14c;
+  font-size: 1.5vh;  
+}	
+
+.footer {
+  color: white;
+  font-size: 1.4vh;
+  height: 4vh;
+}
+
+.footer .url-link{
+ font-size: 1.4vh;	
+}
+
+.tabs {
+  text-align: center;
+  position: relative;
+}
+.tabs input {
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs input + label:hover {
+  color: #777;
+}
+.tabs .tabsShadow {
+  width: 80vw;
+  padding: 10px;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.04);
+  box-sizing: border-box;
+  position: absolute;
+  height: 35px;
+  z-index: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+
+
+#tab-1:checked ~ .glider {
+  left: 0px;
+}
+#tab-2:checked + label {
+  color: #06fdd2;
+}
+#tab-2:checked ~ .glider {
+  background: linear-gradient(90deg, #51a14c 0%, #10c33e 100%);
+  box-shadow: 0px 0px 8px 0px rgba(47, 187, 12, 0.62);
+}
+
+#tab-3:checked + label {
+  color: #525252;
+}
+
+#tab-1:checked ~ section #content-1,
+#tab-2:checked ~ section #content-2,
+#tab-3:checked ~ section #content-3,
+#tab-4:checked ~ section #content-4 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tabs input + label {
+  margin: 8px -8px;
+  width: 18vw;
+  transition: all 0.3s;
+  text-align: center;
+  border: none;
+  border-bottom: 0.5pt solid #1d1e22;
+  color: #e7e9f5;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  padding: 5pt 10pt;
+  vertical-align: top;
+  justify-content: flex-start;
+  background: #333;
+  /*box-shadow: 1px 1px 2px 1px #231f20;*/
+  box-shadow: 1px 1px 2px 1px #631f20;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.6vh;
+  background: #26292c;
+  margin-bottom: 0.5px;
+  border-radius: 7px 7px 0 0 !important;
+  border-top: 1px solid #3b3d3f;
+  letter-spacing: 0.1666666667em !important;
+  font-family: "antique-olive" !important;
+  background: hsl(232deg 6% 17%);
+  cursor: pointer;
+}
+
+h2.tab-title.tab-faq,
+h2.tab-title.tab-instructions,
+h2.tab-title.tab-home,
+h2.tab-title.tab-policy {
+  display: inline-flex;
+  color: #fff;
+  background-position: bottom center;
+  margin-bottom: 0pt !important;
+  margin-top: 4pt;
+  height: 35pt;
+  text-fill-color: transparent !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+  text-transform: capitalize;
+  font-size: 20px;
+  letter-spacing: 0px;
+  font-family: "Manrope" !important;
+  font-weight: 800 !important;
+}
+
+h2.tab-title.tab-policy {
+  background: linear-gradient(10deg, #f7ec9c, #ff8651);
+}
+
+h2.tab-title.tab-instructions {
+  background: linear-gradient(10deg, #06fdd2, #06fdd2);
+}
+
+h2.tab-title.tab-home {
+  background: linear-gradient(
+    60deg,
+    hsl(202deg 100% 75%),
+    hsl(205deg 100% 64%),
+    hsl(230deg 100% 75%),
+    hsl(270deg 100% 72%)
+  );
+}
+
+h2.tab-title.tab-faq {
+  background: linear-gradient(70deg, #c51574, #97389b);
+}
+
+.tabs input {
+  position: relative;
+  opacity: 0;
+  margin: auto !important;
+  padding: 0;
+}
+label.tab.tab-home,
+label.tab.tab-faq,
+label.tab.tab-instructions,
+label.tab.tab-policy {
+  display: inline-block;
+  text-align: center;
+}
+label.tab.tab-home {
+  border-radius: 6pt 0 0 6pt;
+}
+label.tab.tab-faq {
+  border-radius: 0 6pt 6pt 0;
+}
+#tab-1:checked + label {
+  color: deepskyblue;
+}
+#tab-3:checked + label {
+  color: #ffadfa;
+  color: #ffaa75;
+}
+#tab-4:checked + label {
+  color: #ffadfa;
+}
+
+
+#tab-1:checked ~ .glider {
+  left: 0.45vw;
+}
+
+#tab-2:checked ~ .glider {
+  left: 15.35vw;
+}
+#tab-3:checked ~ .glider {
+  background: linear-gradient(
+    90deg,
+    #faffcc 0%,
+    #f5eea3 10%,
+    #ffe48a 40%,
+    #ffb54d 65%,
+    #ff974d 85%,
+    #ff8052 100%
+  );
+  left: 33.77%;
+  box-shadow: 0px 0px 8px 0px hsl(17.72deg 100% 70% / 70%);
+}
+
+#tab-4:checked ~ .glider {
+  background: linear-gradient(90deg, #b9326f 0%, #ff5ddc 100%);
+  box-shadow: 0px 0px 8px 0px rgba(231, 13, 93, 0.57);
+  left: 50.46% !important;
+}
+
+.glider {
+  width: 15vw;
+  padding: 0px 13px;
+  height: 4.5px;
+  border-radius: 0 0 1px 1px;
+  position: absolute;
+  box-shadow: 0px 0px 8px 0px hsl(262deg 100% 70% / 70%);
+  background: linear-gradient(
+    113deg,
+    hsl(260deg 100% 64%) 0%,
+    hsl(190deg 100% 55%) 100%
+  );
+  transition: all 0.3s;
+  top: 36px;
+  z-index: 2;
+}
+
+/* Mobile styles */
+
+@media (max-width: 340px) {
+  .logo {width: 2vh; height: 2vh;}
+  .title {font-size: 2.5vh;}
+  .screenshot {width: 60%; height: auto;}
+  .content .paragraf {font-size: 80%;}
+  h2.tab-title.tab-faq,
+  h2.tab-title.tab-instructions,
+  h2.tab-title.tab-home,
+  h2.tab-title.tab-policy {height: 28pt; font-size: 15px;}
+  .my-headers {1.0vh;}
+  .FAQheader {font-size: 1.2vh;}     
+}
+
+@media (min-width: 341px) and (max-width: 480px) {
+  .logo {width: 3vh; height: 3vh;}
+  .title {font-size: 3.5vh;}
+  .screenshot {width: 60%; height: auto;}
+  .content .paragraf {font-size: 80%;}
+  .content .paragraf {width: 85%;}
+  h2.tab-title.tab-faq,
+  h2.tab-title.tab-instructions,
+  h2.tab-title.tab-home,
+  h2.tab-title.tab-policy {height: 30pt; font-size: 16px;}
+  .my-headers {2.0vh;}
+  .FAQheader {font-size: 1.6vh;}  
+}
+
+/* Tablet styles */
+@media (min-width: 481px) and (max-width: 768px) {
+  .logo {width: 4vh; height: 4vh;}
+  .title {font-size: 4vh;}
+  .screenshot {width: 50%; height: auto;}
+  h2.tab-title.tab-faq,
+  h2.tab-title.tab-instructions,
+  h2.tab-title.tab-home,
+  h2.tab-title.tab-policy {height: 32pt; font-size: 18px;}
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .logo {width: 4%; height: 4%;}
+}
+
+/* High-resolution display styles */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .logo {width: 4%; height: 4%;}
+}
+
+
+
