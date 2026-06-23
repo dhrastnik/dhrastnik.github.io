@@ -166,6 +166,10 @@ body {
     content: "> ";
 }
 
+#instructions .paragraf {
+    font-family: Arial, sans-serif !important;
+	text-align: left !important;
+}
 
 .url-link {
   color: #51a14c;
