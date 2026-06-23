@@ -162,12 +162,6 @@ body {
   text-decoration-line: underline;
 }
 
-/* test
-.instruction-link.title-hover {
-  text-align: left;
-}
-*/
-
 .instruction-link.title-hover::before {
     content: "> ";
 }
