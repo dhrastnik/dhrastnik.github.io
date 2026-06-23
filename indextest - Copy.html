@@ -140,28 +140,24 @@ let originalContent;
 
 async function loadInstructions(file) {
 
+    if (!originalContent) {
+        originalContent =
+            document.getElementById('instructions').innerHTML;
+    }
+
     const response = await fetch(file);
     const html = await response.text();
 
     document.getElementById('instructions').innerHTML =
 	    '<div class="paragraf">' +
+		'<p><a class="instruction-link" href="#" onclick="goBack(); return false;">< Back</a></p>' +
         html +
+        '<p><a class="instruction-link" href="#" onclick="goBack(); return false;">< Back</a></p>' +
 		'</div>';
 }
 
-async function loadInstructionsHeader(file) {
-
-    if (!originalContent) {
-        originalContent =
-            document.getElementById('content-2').innerHTML;
-    }
-
-    document.getElementById('content-2').innerHTML =
-        '<h2 class="tab-title tab-instructions"> onclick="goBack(); return false;" Instruction Guides</h2>';
-}
-
 function goBack() {
-    document.getElementById('content-2').innerHTML =
+    document.getElementById('instructions').innerHTML =
         originalContent;
 }
 </script>
