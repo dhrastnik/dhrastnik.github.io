@@ -162,6 +162,7 @@ body {
   text-decoration-line: underline;
 }
 
+/*
 .instruction-link.title-hover {
   text-align: left;
 }
@@ -169,6 +170,7 @@ body {
 .instruction-link.title-hover::before {
     content: "> ";
 }
+*/
 
 .url-link {
   color: #51a14c;
