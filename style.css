@@ -62,7 +62,7 @@ body {
 }
 
 .container {
-  height: 70vh;
+  height: 85vh;
   min-width: 40vw;
   padding: 10px 0;
   text-align: center;
@@ -83,7 +83,7 @@ body {
 }
 
 .content {
-  height: 55vh;
+  height: 75vh;
   margin: 5px auto;
   text-align: left;
   line-height: 20px;
@@ -155,7 +155,8 @@ body {
 
 .instruction-link {
   color: #02ceab;
-  text-decoration: none;
+  /*text-decoration: none;*/
+  text-align: left !important;
 }
 
 .title-hover:hover {
