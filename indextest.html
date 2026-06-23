@@ -54,11 +54,14 @@
           </p>
         </div>
         <div class="item" id="content-2">
-          <h2 class="tab-title tab-instructions" 
-              onclick="loadInstructionsHeader()" 
-              role="button" 
-              tabindex="0"
-              onkeydown="if(event.key === 'Enter' || event.key === ' ') loadInstructionsHeader();">
+          <h2 class="tab-title tab-instructions">
+              <a id="guideBackBtn"
+                 href="#"
+                 class="instruction-link"
+                 onclick="goBack(); return false;"
+                 style="display:none; margin-right:10px;">
+                 ←
+              </a>
               Instruction Guides
           </h2>
 
@@ -147,43 +150,27 @@ let originalContent;
 
 async function loadInstructions(file) {
 
+    if (!originalContent) {
+        originalContent =
+            document.getElementById('instructions').innerHTML;
+    }
+
     const response = await fetch(file);
     const html = await response.text();
 
     document.getElementById('instructions').innerHTML =
-	    '<div class="paragraf">' +
+        '<div class="paragraf">' +
         html +
-		'</div>';
+        '</div>';
+
+    document.getElementById('guideBackBtn').style.display = 'inline';
 }
 
-async function loadInstructionsHeader() {
-
-    if (!originalContent) {
-        originalContent =
-            document.getElementById('content-2').innerHTML;
-    }
-
-    document.getElementById('content-2').innerHTML =
-           '<h2 class="tab-title tab-instructions"> Instruction Guides </h2>' +
-		   	'<div id="instructions">' +
-            '<p class="paragraf">' +
-			   '<a class="instruction-link title-hover"' +
-  			     'href="#"' +
-				 'onclick="loadInstructions("docs/instructions/guide1.html"); return false;">' +
-                 '> Instalacija mobilnog telefona u vozilo<br><br>' +
-			   '</a>' +
-			   '<a class="instruction-link title-hover"' +
-			     'href="#"' +
-			     'onclick="loadInstructions("docs/instructions/guide2.html"); return false;">' +
-			     '> Instalacija CarAlarmSensor aplikacije<br><br>' +
-			   '</a>' +
-			'</p>' +
-		  '</div>';
-    }
-
 function goBack() {
-    document.getElementById('content-2').innerHTML =
+    document.getElementById('instructions').innerHTML =
         originalContent;
+
+    document.getElementById('guideBackBtn').style.display = 'none';
 }
 </script>
     
