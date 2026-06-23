@@ -54,28 +54,38 @@
           </p>
         </div>
         <div class="item" id="content-2">
-          <h2 class="tab-title tab-instructions">Instruction Guides</h2>
+          <h2 class="tab-title tab-instructions">
+              <a id="guideBackBtn"
+                 href="#"
+                 class="instruction-link"
+                 onclick="goBack(); return false;"
+                 style="display:none; margin-right:10px;">
+                 ←
+              </a>
+              Instruction Guides
+          </h2>
+
 		  <div id="instructions">
             <p class="paragraf">
 			   <a class="instruction-link title-hover"
   			     href="#" 
 				 onclick="loadInstructions('docs/instructions/guide1.html'); return false;">
-                 > Instalacija mobilnog telefona u vozilo<br><br>
+                 Instalacija mobilnog telefona u vozilo<br><br>
 			   </a>
 			   <a class="instruction-link title-hover"
 			     href="#"
 			     onclick="loadInstructions('docs/instructions/guide2.html'); return false;">
-			     > Instalacija CarAlarmSensor aplikacije<br><br>
+                 Instalacija CarAlarmSensor aplikacije<br><br>
 			   </a>
 			   <a class="instruction-link title-hover"
 			     href="#"
 				 onclick="loadInstructions('docs/instructions/guide3.html'); return false;">
-			     > Instalacija CarAlarm aplikacije<br><br>
+                 Instalacija CarAlarm aplikacije<br><br>
 			   </a>
 			   <a class="instruction-link title-hover"
 			     href="#"
 			     onclick="loadInstructions('docs/instructions/guide4.html'); return false;">
-			     > Uputa za korištenje alarmnog sustava<br><br>
+                 Uputa za korištenje alarmnog sustava<br><br>
 			   </a>
 			</p>
 		  </div>	
@@ -149,16 +159,18 @@ async function loadInstructions(file) {
     const html = await response.text();
 
     document.getElementById('instructions').innerHTML =
-	    '<div class="paragraf">' +
-		'<p><a class="instruction-link" href="#" onclick="goBack(); return false;">< Back</a></p>' +
+        '<div class="paragraf">' +
         html +
-        '<p><a class="instruction-link" href="#" onclick="goBack(); return false;">< Back</a></p>' +
-		'</div>';
+        '</div>';
+
+    document.getElementById('guideBackBtn').style.display = 'inline';
 }
 
 function goBack() {
     document.getElementById('instructions').innerHTML =
         originalContent;
+
+    document.getElementById('guideBackBtn').style.display = 'none';
 }
 </script>
     
