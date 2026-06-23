@@ -54,7 +54,14 @@
           </p>
         </div>
         <div class="item" id="content-2">
-          <h2 class="tab-title tab-instructions" onclick="loadInstructionsHeader; return false;">Instruction Guides</h2>
+          <h2 class="tab-title tab-instructions" 
+              onclick="loadInstructionsHeader()" 
+              role="button" 
+              tabindex="0"
+              onkeydown="if(event.key === 'Enter' || event.key === ' ') loadInstructionsHeader();">
+              Instruction Guides
+          </h2>
+
 		  <div id="instructions">
             <p class="paragraf">
 			   <a class="instruction-link title-hover"
@@ -149,7 +156,7 @@ async function loadInstructions(file) {
 		'</div>';
 }
 
-async function loadInstructionsHeader {
+async function loadInstructionsHeader() {
 
     if (!originalContent) {
         originalContent =
@@ -157,8 +164,22 @@ async function loadInstructionsHeader {
     }
 
     document.getElementById('content-2').innerHTML =
-        '<h2 class="tab-title tab-instructions"> onclick="goBack(); return false;" Instruction Guides</h2>';
-}
+           '<h2 class="tab-title tab-instructions"> Instruction Guides </h2>' +
+		   	'<div id="instructions">' +
+            '<p class="paragraf">' +
+			   '<a class="instruction-link title-hover"' +
+  			     'href="#"' +
+				 'onclick="loadInstructions("docs/instructions/guide1.html"); return false;">' +
+                 '> Instalacija mobilnog telefona u vozilo<br><br>' +
+			   '</a>' +
+			   '<a class="instruction-link title-hover"' +
+			     'href="#"' +
+			     'onclick="loadInstructions("docs/instructions/guide2.html"); return false;">' +
+			     '> Instalacija CarAlarmSensor aplikacije<br><br>' +
+			   '</a>' +
+			'</p>' +
+		  '</div>';
+    }
 
 function goBack() {
     document.getElementById('content-2').innerHTML =
