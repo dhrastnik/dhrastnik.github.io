@@ -54,7 +54,7 @@
           </p>
         </div>
         <div class="item" id="content-2">
-          <h2 class="tab-title tab-instructions">Instruction Guides</h2>
+          <h2 class="tab-title tab-instructions" onclick="loadInstructionsHeader; return false;">Instruction Guides</h2>
 		  <div id="instructions">
             <p class="paragraf">
 			   <a class="instruction-link title-hover"
@@ -149,7 +149,7 @@ async function loadInstructions(file) {
 		'</div>';
 }
 
-async function loadInstructionsHeader(file) {
+async function loadInstructionsHeader {
 
     if (!originalContent) {
         originalContent =
