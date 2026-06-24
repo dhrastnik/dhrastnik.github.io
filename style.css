@@ -418,12 +418,13 @@ label.tab.tab-faq {
   .logo {width: 3vh; height: 3vh;}
   .title {font-size: 3.5vh;}
   .screenshot {width: 60%; height: auto;}
-  .content .paragraf {font-size: 90%;}
+  .content .paragraf {font-size: 80%;}
   .content .paragraf {width: 85%;}
   h2.tab-title.tab-faq,
   h2.tab-title.tab-instructions,
   h2.tab-title.tab-home,
   h2.tab-title.tab-policy {height: 30pt; font-size: 16px;}
+  .instruction-link {font-size: 90%;}
   .my-headers {2.0vh;}
   .FAQheader {font-size: 1.6vh;}  
 }
