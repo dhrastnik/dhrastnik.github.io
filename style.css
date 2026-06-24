@@ -98,7 +98,7 @@ body {
 }
 
 .content .item {
-  height: 55vh;
+  height: 65vh;
   /*width: 74vw;*/
   width: auto;
   opacity: 0;
@@ -114,7 +114,7 @@ body {
   scrollbar-gutter: stable; /* Keeps space for scrollbar */
   letter-spacing: 0.25px;
   width: 80vw;
-  height: 45vh;
+  height: 55vh;
   font-size: 1.8vh;
   font-style: normal;
   text-align: justify;
