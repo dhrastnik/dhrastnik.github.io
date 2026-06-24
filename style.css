@@ -62,7 +62,7 @@ body {
 }
 
 .container {
-  height: 85vh;
+  height: 80vh;
   min-width: 40vw;
   padding: 10px 0;
   text-align: center;
@@ -83,7 +83,7 @@ body {
 }
 
 .content {
-  height: 75vh;
+  height: 70vh;
   margin: 5px auto;
   text-align: left;
   line-height: 20px;
@@ -112,7 +112,7 @@ body {
   margin: 10px 15px 10px 10px;
   padding-right: 20px;
   scrollbar-gutter: stable; /* Keeps space for scrollbar */
-  letter-spacing: 0.75px;
+  letter-spacing: 0.25px;
   width: 80vw;
   height: 45vh;
   font-size: 1.8vh;
@@ -155,16 +155,19 @@ body {
 
 .instruction-link {
   color: #02ceab;
-  /*text-decoration: none;*/
-  text-align: left !important;
+  text-decoration: none;
+  display: flex;
+  align-items: flex-start;
 }
 
-.title-hover:hover {
+title-hover:hover {
   text-decoration-line: underline;
 }
 
 .instruction-link.title-hover::before {
-    content: "> ";
+    content: ">";
+	margin-right: 8px;
+    flex-shrink: 0;
 }
 
 #instructions .paragraf {
@@ -269,7 +272,7 @@ body {
 
 #guideBackBtn {
     text-decoration: none;
-    font-size: 24px;
+   /* font-size: 1.6vh; */
     font-weight: bold;
     vertical-align: middle;
 }
